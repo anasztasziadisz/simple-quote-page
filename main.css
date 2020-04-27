@@ -21,13 +21,68 @@ body{
 
 .quote {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .author {
   font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
   padding-top: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+  .quote{
+    font-size: 2.5rem;
+  }
+  
+  .author {
+    font-size: 1.5rem;
+  }
+  
+}
+
+/*Bootstrap sticky footer*/
+html{
+  position: relative;
+}
+/*Bootstrap sticky footer*/
+body{
+  margin-bottom: 0px;
+  
+}
+
+footer {
+  height: 10vh;/*Bootstrap sticky footer*/
+  width: 100%; /*Bootstrap sticky footer*/
+  display: table;
+  text-align: center;  
+  /*background-color: antiquewhite;*/
+  position: absolute; /*Bootstrap sticky footer*/
+  bottom: 10vh; /*Bootstrap sticky footer*/
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo{
+  width: 45px;
+  height: 22.5px;
+  margin: 0 10px;
+  border: 0px solid;
+  border-radius: 10px;
+  opacity: 0.7;
+  
+}
+
+.greek{
+  font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.logo:hover{
+  opacity: 1;
 }
